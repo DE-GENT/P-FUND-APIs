@@ -16,14 +16,14 @@ class SubmitDeliverableRequest extends FormRequest
         return [
             'title'       => ['required', 'string', 'max:255'],
             'description' => ['nullable', 'string'],
-            'file'        => ['required', 'file', 'mimes:pdf,doc,docx,jpg,jpeg,png,zip,rar,xls,xlsx,ppt,pptx', 'max:10240'],
+            'file'        => ['required', 'file', 'mimes:pdf,doc,docx,jpg,jpeg,png,zip,rar,xls,xlsx,ppt,pptx', 'max:102400'],
         ];
     }
 
     public function messages(): array
     {
         return [
-            'file.max'   => 'The deliverable file must not exceed 10 MB.',
+            'file.max'   => 'The deliverable file must not exceed 100 MB.',
             'file.mimes' => 'Allowed file types: PDF, DOC, DOCX, JPG, PNG, ZIP, RAR, XLS, XLSX, PPT, PPTX.',
         ];
     }
