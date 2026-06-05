@@ -16,13 +16,13 @@ class AuthController extends Controller
 {
     use ApiResponse;
 
-    public function register(Request $request)
+    public function register(Request $request)// this line of code creates a method called register, it takes a request as an argument and save it in the variable $request and validate the request
     {
         $validated = $request->validate([
             'name'              => ['required', 'string', 'max:255'],
             'email'             => ['required', 'email', 'unique:users'],
             'password'          => ['required', 'confirmed', Rules\Password::defaults()],
-            'role'              => ['sometimes', 'in:creator,sponsor'],
+            'role'              => ['sometimes', 'in:creator,sponsor,admin,user'],
             'phone'             => ['nullable', 'string', 'max:20'],
             'nationality'       => ['nullable', 'string', 'max:100'],
             'address'           => ['nullable', 'string', 'max:255'],
@@ -30,9 +30,9 @@ class AuthController extends Controller
             'education_level'   => ['nullable', 'in:phd,masters,bachelors'],
         ]);
 
-        \Illuminate\Support\Facades\DB::beginTransaction();
+        \Illuminate\Support\Facades\DB::beginTransaction();//A database transaction is used to bundle multiple database operations together so they either all succeed or all fail as a single unit (known as the "all-or-nothing" principle).
         try {
-            $user  = User::create($validated);
+            $user  = User::create($validated);// create a user using the information store in $validated and save it in $user
             $token = $user->createToken('auth_token')->plainTextToken;
             
             \App\Models\ActivityLog::create([
@@ -143,7 +143,7 @@ class AuthController extends Controller
             'password' => ['required'],
             'role'     => ['required', 'string'],
         ]);
-
+//Instructs Laravel to use the 'web' authentication guard. This guard is configured
         if (!Auth::guard('web')->validate($request->only('email', 'password'))) {
             return $this->error('Invalid email or password', 401);
         }

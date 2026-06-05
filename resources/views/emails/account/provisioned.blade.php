@@ -13,7 +13,7 @@ Here are your login credentials:
 Please log in and update your password immediately for security purposes.
 </x-mail::panel>
 
-<x-mail::button :url="'http://127.0.0.1:5500/pages/auth/login.html'">
+<x-mail::button :url="route('login')">
 Login to your Account
 </x-mail::button>
 

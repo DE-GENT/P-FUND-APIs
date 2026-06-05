@@ -1,0 +1,30 @@
+<mxfile host="Electron" modified="2026-06-05T00:00:00.000Z" agent="Mozilla/5.0" version="20.0.0">
+  <diagram id="diagram_1" name="Page-1">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Frontend Card -->
+        <mxCell id="2" value="&lt;b&gt;Frontend&lt;/b&gt;&lt;br&gt;Blade Views &amp;amp; JS Client" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="100" y="200" width="160" height="80" as="geometry" />
+        </mxCell>
+        <!-- Backend Card -->
+        <mxCell id="3" value="&lt;b&gt;Backend&lt;/b&gt;&lt;br&gt;Laravel API Controllers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="360" y="200" width="160" height="80" as="geometry" />
+        </mxCell>
+        <!-- Database Card -->
+        <mxCell id="4" value="&lt;b&gt;Database&lt;/b&gt;&lt;br&gt;SQLite / MySQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="620" y="190" width="120" height="100" as="geometry" />
+        </mxCell>
+        <!-- Front to Back Line -->
+        <mxCell id="5" value="JSON API Requests" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Back to Front Line -->
+        <mxCell id="6" value="Eloquent ORM" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

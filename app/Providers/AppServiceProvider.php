@@ -20,7 +20,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         \Illuminate\Auth\Notifications\ResetPassword::createUrlUsing(function ($user, string $token) {
-            return 'http://localhost/P-FUNDS/pages/auth/reset-password.html?token=' . $token . '&email=' . $user->email;
+            return route('password.reset', ['token' => $token, 'email' => $user->email], true);
         });
     }
 }

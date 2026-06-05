@@ -12,14 +12,15 @@ class VetterProjectController extends Controller
 {
     use ApiResponse;
 
+    // getMilestoneFilterClosure is a helper function that returns a closure that can be used to filter milestones based on the role of the vetter.
     protected function getMilestoneFilterClosure($role)
     {
-        return function ($query) use ($role) {
-            if ($role === 'vetter_1') {
+        return function ($query) use ($role) {//this is a function that returns a closure that can be used to filter milestones based on the role of the vetter.
+            if ($role === 'vetter_1') {//if the role of the vetter is vetter_1, then the query will be filtered based on the title of the milestone.
                 $query->where('title', 'like', 'Level 1%');
-            } elseif ($role === 'vetter_2') {
+            } elseif ($role === 'vetter_2') {//if the role of the vetter is vetter_2, then the query will be filtered based on the title of the milestone.
                 $query->where('title', 'like', 'Level 2%');
-            } elseif ($role === 'vetter_3') {
+            } elseif ($role === 'vetter_3') {//if the role of the vetter is vetter_3, then the query will be filtered based on the title of the milestone.
                 $query->where('title', 'like', 'Level 3%');
             }
         };
@@ -133,7 +134,7 @@ class VetterProjectController extends Controller
                     'type'    => 'project_approved',
                     'title'   => '✅ Project Approved!',
                     'body'    => "Congratulations! Your project \"{$project->title}\" has been fully approved for funding deployment as all milestones are complete.",
-                    'link'    => '/pages/dashboard/user/dashboard.html',
+                    'link'    => '/dashboard/user',
                 ]);
             }
 
@@ -156,7 +157,7 @@ class VetterProjectController extends Controller
                         ? '✅ Vetting Milestone Completed'
                         : '🔄 Vetting Milestone Reset',
                     'body'    => "Milestone \"{$milestone->title}\" on your project \"{$project->title}\" has been marked as {$request->status}.",
-                    'link'    => '/pages/dashboard/user/dashboard.html',
+                    'link'    => '/dashboard/user',
                 ]);
             }
         }
@@ -204,7 +205,7 @@ class VetterProjectController extends Controller
                 'type'    => 'project_needs_update',
                 'title'   => '⚠️ Project Update Required',
                 'body'    => "A reviewer has requested an update for your project \"{$project->title}\". Remarks: \"{$request->remarks}\".",
-                'link'    => '/pages/dashboard/user/project-update.html',
+                'link'    => '/dashboard/user/project-update',
             ]);
         }
 
@@ -260,7 +261,7 @@ class VetterProjectController extends Controller
                 'type'    => 'project_rejected',
                 'title'   => '❌ Project Rejected',
                 'body'    => "Your project \"{$project->title}\" has been rejected during review. Remarks: \"{$request->remarks}\".",
-                'link'    => '/pages/dashboard/user/project-update.html',
+                'link'    => '/dashboard/user/project-update',
             ]);
         }
 

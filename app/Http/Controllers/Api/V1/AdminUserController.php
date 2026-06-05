@@ -76,7 +76,7 @@ class AdminUserController extends Controller
             'type'    => 'account_created',
             'title'   => '🎉 Welcome to P-FUNDS!',
             'body'    => "Your " . $user->friendly_role . " account has been provisioned by an administrator. Log in with your email and temporary password.",
-            'link'    => '/pages/auth/login.html',
+            'link'    => '/auth/login',
         ]);
 
         return response()->json([

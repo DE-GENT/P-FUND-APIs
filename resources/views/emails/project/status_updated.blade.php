@@ -29,7 +29,7 @@ A reviewer has requested revisions or additional details for your project. Pleas
 </x-mail::panel>
 @endif
 
-<x-mail::button :url="'http://127.0.0.1:5500/pages/dashboard/user/dashboard.html'">
+<x-mail::button :url="route('user.dashboard')">
 View Project Dashboard
 </x-mail::button>
 

@@ -93,7 +93,7 @@ class VetterDeliverableController extends Controller
                 'body'    => $isAccepted
                     ? "Your deliverable \"{$deliverable->title}\" for project \"{$project->title}\" has been accepted."
                     : "Your deliverable \"{$deliverable->title}\" for project \"{$project->title}\" has been rejected/requires correction. Remarks: \"{$request->remarks}\".",
-                'link'    => '/pages/dashboard/user/dashboard.html',
+                'link'    => '/dashboard/user',
             ]);
         }
 

@@ -125,6 +125,27 @@ class ProjectController extends Controller
             ]);
         }
 
+        // Notify all Admins and Vetters about the update
+        try {
+            $recipients = \App\Models\User::where('role', 'admin')
+                ->orWhere('role', 'like', 'vetter%')
+                ->get();
+
+            foreach ($recipients as $recipient) {
+                \App\Models\Notification::create([
+                    'user_id' => $recipient->id,
+                    'type'    => 'project_updated',
+                    'title'   => '📝 Project Updated',
+                    'body'    => "The project \"{$project->title}\" has been updated by its creator {$request->user()->name}.",
+                    'link'    => $recipient->role === 'admin' 
+                        ? '/dashboard/admin/project-tracking' 
+                        : '/dashboard/vetter',
+                ]);
+            }
+        } catch (\Exception $e) {
+            \Illuminate\Support\Facades\Log::error('Failed to create update notifications: ' . $e->getMessage());
+        }
+
         return $this->success(
             $project->fresh()->load('documents'),
             'Project updated successfully'
@@ -203,8 +224,31 @@ class ProjectController extends Controller
                 'body'    => $isResubmission 
                     ? "Your project \"{$project->title}\" was successfully resubmitted and is back in the vetting queue."
                     : "Your project \"{$project->title}\" was successfully submitted and is now pending review.",
-                'link'    => '/pages/dashboard/user/dashboard.html',
+                'link'    => '/dashboard/user',
             ]);
+        }
+
+        // Notify all Admins and Vetters about the submission/resubmission
+        try {
+            $recipients = \App\Models\User::where('role', 'admin')
+                ->orWhere('role', 'like', 'vetter%')
+                ->get();
+
+            foreach ($recipients as $recipient) {
+                \App\Models\Notification::create([
+                    'user_id' => $recipient->id,
+                    'type'    => $isResubmission ? 'project_resubmitted' : 'project_submitted',
+                    'title'   => $isResubmission ? '🔄 Project Resubmitted' : '🚀 Project Submitted',
+                    'body'    => $isResubmission 
+                        ? "The project \"{$project->title}\" was resubmitted by {$request->user()->name} and is back in the vetting queue."
+                        : "A new project \"{$project->title}\" was submitted by {$request->user()->name} and is pending review.",
+                    'link'    => $recipient->role === 'admin' 
+                        ? ($isResubmission ? '/dashboard/admin/project-tracking' : '/dashboard/admin/project-review')
+                        : '/dashboard/vetter',
+                ]);
+            }
+        } catch (\Exception $e) {
+            \Illuminate\Support\Facades\Log::error('Failed to create staff notifications on submit: ' . $e->getMessage());
         }
 
         // Send email to the creator

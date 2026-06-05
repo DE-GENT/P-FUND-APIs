@@ -26,7 +26,6 @@ class EnsureRole
             // Allow vetter_1, vetter_2, vetter_3 when 'vetter' is required
             if ($required === 'vetter' && str_starts_with($userRole, 'vetter')) { $hasAccess = true; break; }
         }
-
         if (!$user || !$hasAccess) {
             return response()->json([
                 'success' => false,

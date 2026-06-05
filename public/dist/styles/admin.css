@@ -1,0 +1,2589 @@
+/* ========================================= */
+/* From ad_account_create.html (Block 1) */
+/* ========================================= */
+/* Admin Sidebar specific colors */
+.sidebar {
+    background-color: #064e3b !important;
+}
+
+/* Dropdown styles */
+.nav-group {
+    margin-bottom: 5px;
+}
+
+.nav-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    color: #a7f3d0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 4px solid transparent;
+}
+
+.nav-group-header:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-group-header i.icon {
+    width: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.nav-group-header i.chevron {
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.nav-group.expanded .nav-group-header i.chevron {
+    transform: rotate(90deg);
+}
+
+.sub-nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 0;
+}
+
+.nav-group.expanded .sub-nav {
+    display: flex;
+}
+
+.sub-nav-item {
+    padding: 10px 25px 10px 60px;
+    color: #a7f3d0;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.sub-nav-item:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Adjust normal nav items to match new green theme */
+.nav-item {
+    color: #a7f3d0;
+}
+
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-left-color: #ffffff;
+}
+
+/* Adjust main layout bg */
+.dashboard-container {
+    background-color: #f3f5f8;
+}
+
+.dashboard-topbar {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    margin-bottom: 30px;
+}
+
+
+/* ========================================= */
+/* From ad_account_create.html (Block 2) */
+/* ========================================= */
+#notif-dropdown.show {
+    display: block !important;
+}
+
+
+/* ========================================= */
+/* From ad_account_review.html (Block 1) */
+/* ========================================= */
+/* Admin Sidebar specific colors */
+.sidebar {
+    background-color: #064e3b !important;
+}
+
+/* Dropdown styles */
+.nav-group {
+    margin-bottom: 5px;
+}
+
+.nav-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    color: #a7f3d0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 4px solid transparent;
+}
+
+.nav-group-header:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-group-header i.icon {
+    width: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.nav-group-header i.chevron {
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.nav-group.expanded .nav-group-header i.chevron {
+    transform: rotate(90deg);
+}
+
+.sub-nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 0;
+}
+
+.nav-group.expanded .sub-nav {
+    display: flex;
+}
+
+.sub-nav-item {
+    padding: 10px 25px 10px 60px;
+    color: #a7f3d0;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.sub-nav-item:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Adjust normal nav items to match new green theme */
+.nav-item {
+    color: #a7f3d0;
+}
+
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-left-color: #ffffff;
+}
+
+/* Adjust main layout bg */
+.dashboard-container {
+    background-color: #f3f5f8;
+}
+
+.dashboard-topbar {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    margin-bottom: 30px;
+}
+
+
+/* ========================================= */
+/* From ad_account_review.html (Block 2) */
+/* ========================================= */
+#notif-dropdown.show {
+    display: block !important;
+}
+
+
+/* ========================================= */
+/* From ad_activity_logs.html (Block 1) */
+/* ========================================= */
+/* Admin Sidebar specific colors */
+.sidebar {
+    background-color: #064e3b !important;
+}
+
+/* Dropdown styles */
+.nav-group {
+    margin-bottom: 5px;
+}
+
+.nav-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    color: #a7f3d0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 4px solid transparent;
+}
+
+.nav-group-header:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-group-header i.icon {
+    width: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.nav-group-header i.chevron {
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.nav-group.expanded .nav-group-header i.chevron {
+    transform: rotate(90deg);
+}
+
+.sub-nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 0;
+}
+
+.nav-group.expanded .sub-nav {
+    display: flex;
+}
+
+.sub-nav-item {
+    padding: 10px 25px 10px 60px;
+    color: #a7f3d0;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.sub-nav-item:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Adjust normal nav items to match new green theme */
+.nav-item {
+    color: #a7f3d0;
+}
+
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-left-color: #ffffff;
+}
+
+/* Adjust main layout bg */
+.dashboard-container {
+    background-color: #f3f5f8;
+}
+
+.dashboard-topbar {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    margin-bottom: 30px;
+}
+
+/* ========================================= */
+/* From ad_activity_logs.html (Block 2) */
+/* ========================================= */
+#notif-dropdown.show {
+    display: block !important;
+}
+
+
+/* ========================================= */
+/* From ad_activity_logs.html (Block 3) */
+/* ========================================= */
+.chat-panel {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    width: 350px;
+    background: white;
+
+    /*top header*/
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    .page-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #334155;
+    }
+
+    .user-profile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .user-profile img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #e2e8f0;
+    }
+
+    .user-info p:first-child {
+        font-size: 14px;
+        font-weight: 500;
+        color: #1e293b;
+    }
+
+    .user-info p:last-child {
+        font-size: 12px;
+        color: #64748b;
+    }
+
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.chat-panel.active {
+    display: flex;
+}
+
+.chat-message {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 18px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.chat-message.sent {
+    background-color: #064e3b;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-message.received {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-sender-name {
+    font-size: 11px;
+    color: #64748b;
+    margin-bottom: 4px;
+    margin-left: 2px;
+}
+
+
+/* ========================================= */
+/* From ad_dashboard.html (Block 1) */
+/* ========================================= */
+/* Admin Sidebar specific colors */
+.sidebar {
+    background-color: #064e3b !important;
+}
+
+/* Dropdown styles */
+.nav-group {
+    margin-bottom: 5px;
+}
+
+.nav-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    color: #a7f3d0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 4px solid transparent;
+}
+
+.nav-group-header:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-group-header i.icon {
+    width: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.nav-group-header i.chevron {
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.nav-group.expanded .nav-group-header i.chevron {
+    transform: rotate(90deg);
+}
+
+.sub-nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 0;
+}
+
+.nav-group.expanded .sub-nav {
+    display: flex;
+}
+
+.sub-nav-item {
+    padding: 10px 25px 10px 60px;
+    color: #a7f3d0;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.sub-nav-item:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Adjust normal nav items to match new green theme */
+.nav-item {
+    color: #a7f3d0;
+}
+
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-left-color: #ffffff;
+}
+
+/* Adjust main layout bg */
+.dashboard-container {
+    background-color: #f3f5f8;
+}
+
+.dashboard-topbar {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    margin-bottom: 30px;
+}
+
+
+/* ========================================= */
+/* From ad_dashboard.html (Block 2) */
+/* ========================================= */
+#notif-dropdown.show {
+    display: block !important;
+}
+
+
+/* ========================================= */
+/* From ad_dashboard.html (Block 3) */
+/* ========================================= */
+.chat-panel {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    width: 350px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.chat-panel.active {
+    display: flex;
+}
+
+.chat-message {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 18px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.chat-message.sent {
+    background-color: #064e3b;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-message.received {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-sender-name {
+    font-size: 11px;
+    color: #64748b;
+    margin-bottom: 4px;
+    margin-left: 2px;
+}
+
+
+/* ========================================= */
+/* From ad_milestone_updates.html (Block 1) */
+/* ========================================= */
+/* Admin Sidebar specific colors */
+.sidebar {
+    background-color: #064e3b !important;
+}
+
+/* Dropdown styles */
+.nav-group {
+    margin-bottom: 5px;
+}
+
+.nav-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    color: #a7f3d0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 4px solid transparent;
+}
+
+.nav-group-header:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-group-header i.icon {
+    width: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.nav-group-header i.chevron {
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.nav-group.expanded .nav-group-header i.chevron {
+    transform: rotate(90deg);
+}
+
+.sub-nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 0;
+}
+
+.nav-group.expanded .sub-nav {
+    display: flex;
+}
+
+.sub-nav-item {
+    padding: 10px 25px 10px 60px;
+    color: #a7f3d0;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.sub-nav-item:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Adjust normal nav items to match new green theme */
+.nav-item {
+    color: #a7f3d0;
+}
+
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-left-color: #ffffff;
+}
+
+/* Adjust main layout bg */
+.dashboard-container {
+    background-color: #f3f5f8;
+}
+
+.dashboard-topbar {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    margin-bottom: 30px;
+}
+
+
+/* ========================================= */
+/* From ad_milestone_updates.html (Block 2) */
+/* ========================================= */
+#notif-dropdown.show {
+    display: block !important;
+}
+
+
+/* ========================================= */
+/* From ad_milestone_updates.html (Block 3) */
+/* ========================================= */
+.chat-panel {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    width: 350px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.chat-panel.active {
+    display: flex;
+}
+
+.chat-message {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 18px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.chat-message.sent {
+    background-color: #064e3b;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-message.received {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-sender-name {
+    font-size: 11px;
+    color: #64748b;
+    margin-bottom: 4px;
+    margin-left: 2px;
+}
+
+
+/* ========================================= */
+/* From ad_profile.html (Block 1) */
+/* ========================================= */
+/* Admin Sidebar specific colors */
+.sidebar {
+    background-color: #064e3b !important;
+}
+
+/* Dropdown styles */
+.nav-group {
+    margin-bottom: 5px;
+}
+
+.nav-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    color: #a7f3d0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 4px solid transparent;
+}
+
+.nav-group-header:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-group-header i.icon {
+    width: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.nav-group-header i.chevron {
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.nav-group.expanded .nav-group-header i.chevron {
+    transform: rotate(90deg);
+}
+
+.sub-nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 0;
+}
+
+.nav-group.expanded .sub-nav {
+    display: flex;
+}
+
+.sub-nav-item {
+    padding: 10px 25px 10px 60px;
+    color: #a7f3d0;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.sub-nav-item:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-item {
+    color: #a7f3d0;
+}
+
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-left-color: #ffffff;
+}
+
+.dashboard-container {
+    background-color: #f3f5f8;
+}
+
+.dashboard-topbar {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    margin-bottom: 30px;
+}
+
+/* Profile specific styles */
+.content-area {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 40px 40px 40px;
+    max-width: 1000px;
+}
+
+.profile-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    /* overflow: hidden; */
+    border: 1px solid #e2e8f0;
+}
+
+.profile-header {
+    background-color: #f8fafc;
+    padding: 30px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #064e3b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(6, 78, 59, 0.2);
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    color: #0f172a;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.profile-body {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #1e293b;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s;
+    background-color: #f8fafc;
+    color: #475569;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #064e3b;
+    box-shadow: 0 0 0 3px rgba(6, 78, 59, 0.1);
+    background-color: #fff;
+}
+
+.btn-dark {
+    background-color: #064e3b;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-dark:hover {
+    background-color: #047857;
+}
+
+
+/* ========================================= */
+/* From ad_project_review.html (Block 1) */
+/* ========================================= */
+/* Admin Sidebar specific colors */
+.sidebar {
+    background-color: #064e3b !important;
+}
+
+/* Dropdown styles */
+.nav-group {
+    margin-bottom: 5px;
+}
+
+.nav-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    color: #a7f3d0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 4px solid transparent;
+}
+
+.nav-group-header:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-group-header i.icon {
+    width: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.nav-group-header i.chevron {
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.nav-group.expanded .nav-group-header i.chevron {
+    transform: rotate(90deg);
+}
+
+.sub-nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 0;
+}
+
+.nav-group.expanded .sub-nav {
+    display: flex;
+}
+
+.sub-nav-item {
+    padding: 10px 25px 10px 60px;
+    color: #a7f3d0;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.sub-nav-item:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Adjust normal nav items to match new green theme */
+.nav-item {
+    color: #a7f3d0;
+}
+
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-left-color: #ffffff;
+}
+
+/* Adjust main layout bg */
+.dashboard-container {
+    background-color: #f3f5f8;
+}
+
+.dashboard-topbar {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    margin-bottom: 30px;
+}
+
+
+/* ========================================= */
+/* From ad_project_review.html (Block 2) */
+/* ========================================= */
+#notif-dropdown.show {
+    display: block !important;
+}
+
+
+/* ========================================= */
+/* From ad_project_review.html (Block 3) */
+/* ========================================= */
+.chat-panel {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    width: 350px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.chat-panel.active {
+    display: flex;
+}
+
+.chat-message {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 18px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.chat-message.sent {
+    background-color: #064e3b;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-message.received {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-sender-name {
+    font-size: 11px;
+    color: #64748b;
+    margin-bottom: 4px;
+    margin-left: 2px;
+}
+
+
+/* ========================================= */
+/* From ad_project_tracking.html (Block 1) */
+/* ========================================= */
+/* Admin Sidebar specific colors */
+.sidebar {
+    background-color: #064e3b !important;
+}
+
+/* Dropdown styles */
+.nav-group {
+    margin-bottom: 5px;
+}
+
+.nav-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    color: #a7f3d0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 4px solid transparent;
+}
+
+.nav-group-header:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-group-header i.icon {
+    width: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.nav-group-header i.chevron {
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.nav-group.expanded .nav-group-header i.chevron {
+    transform: rotate(90deg);
+}
+
+.sub-nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 0;
+}
+
+.nav-group.expanded .sub-nav {
+    display: flex;
+}
+
+.sub-nav-item {
+    padding: 10px 25px 10px 60px;
+    color: #a7f3d0;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.sub-nav-item:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Adjust normal nav items to match new green theme */
+.nav-item {
+    color: #a7f3d0;
+}
+
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-left-color: #ffffff;
+}
+
+/* Adjust main layout bg */
+.dashboard-container {
+    background-color: #f3f5f8;
+}
+
+.dashboard-topbar {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    margin-bottom: 30px;
+}
+
+
+/* ========================================= */
+/* From ad_project_tracking.html (Block 2) */
+/* ========================================= */
+#notif-dropdown.show {
+    display: block !important;
+}
+
+
+/* ========================================= */
+/* From ad_project_tracking.html (Block 3) */
+/* ========================================= */
+.chat-panel {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    width: 350px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.chat-panel.active {
+    display: flex;
+}
+
+.chat-message {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 18px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.chat-message.sent {
+    background-color: #064e3b;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-message.received {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-sender-name {
+    font-size: 11px;
+    color: #64748b;
+    margin-bottom: 4px;
+    margin-left: 2px;
+}
+
+
+/* ========================================= */
+/* From ad_rejected_projects.html (Block 1) */
+/* ========================================= */
+/* Admin Sidebar specific colors */
+.sidebar {
+    background-color: #064e3b !important;
+}
+
+/* Dropdown styles */
+.nav-group {
+    margin-bottom: 5px;
+}
+
+.nav-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    color: #a7f3d0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 4px solid transparent;
+}
+
+.nav-group-header:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-group-header i.icon {
+    width: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.nav-group-header i.chevron {
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.nav-group.expanded .nav-group-header i.chevron {
+    transform: rotate(90deg);
+}
+
+.sub-nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 0;
+}
+
+.nav-group.expanded .sub-nav {
+    display: flex;
+}
+
+.sub-nav-item {
+    padding: 10px 25px 10px 60px;
+    color: #a7f3d0;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.sub-nav-item:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Adjust normal nav items to match new green theme */
+.nav-item {
+    color: #a7f3d0;
+}
+
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-left-color: #ffffff;
+}
+
+/* Adjust main layout bg */
+.dashboard-container {
+    background-color: #f3f5f8;
+}
+
+.dashboard-topbar {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    margin-bottom: 30px;
+}
+
+
+/* ========================================= */
+/* From ad_rejected_projects.html (Block 2) */
+/* ========================================= */
+#notif-dropdown.show {
+    display: block !important;
+}
+
+
+/* ========================================= */
+/* From ad_rejected_projects.html (Block 3) */
+/* ========================================= */
+.chat-panel {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    width: 350px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.chat-panel.active {
+    display: flex;
+}
+
+.chat-message {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 18px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.chat-message.sent {
+    background-color: #064e3b;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-message.received {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-sender-name {
+    font-size: 11px;
+    color: #64748b;
+    margin-bottom: 4px;
+    margin-left: 2px;
+}
+
+
+/* ========================================= */
+/* From ad_role_assignment.html (Block 1) */
+/* ========================================= */
+/* Admin Sidebar specific colors */
+.sidebar {
+    background-color: #064e3b !important;
+}
+
+/* Dropdown styles */
+.nav-group {
+    margin-bottom: 5px;
+}
+
+.nav-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    color: #a7f3d0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 4px solid transparent;
+}
+
+.nav-group-header:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-group-header i.icon {
+    width: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.nav-group-header i.chevron {
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.nav-group.expanded .nav-group-header i.chevron {
+    transform: rotate(90deg);
+}
+
+.sub-nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 0;
+}
+
+.nav-group.expanded .sub-nav {
+    display: flex;
+}
+
+.sub-nav-item {
+    padding: 10px 25px 10px 60px;
+    color: #a7f3d0;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.sub-nav-item:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Adjust normal nav items to match new green theme */
+.nav-item {
+    color: #a7f3d0;
+}
+
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-left-color: #ffffff;
+}
+
+/* Adjust main layout bg */
+.dashboard-container {
+    background-color: #f3f5f8;
+}
+
+.dashboard-topbar {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    margin-bottom: 30px;
+}
+
+
+/* ========================================= */
+/* From ad_role_assignment.html (Block 2) */
+/* ========================================= */
+#notif-dropdown.show {
+    display: block !important;
+}
+
+
+/* ========================================= */
+/* From ad_role_assignment.html (Block 3) */
+/* ========================================= */
+.chat-panel {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    width: 350px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.chat-panel.active {
+    display: flex;
+}
+
+.chat-message {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 18px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.chat-message.sent {
+    background-color: #064e3b;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-message.received {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-sender-name {
+    font-size: 11px;
+    color: #64748b;
+    margin-bottom: 4px;
+    margin-left: 2px;
+}
+
+
+
+/* ========================================= */
+/* Extracted Inline Styles                   */
+/* ========================================= */
+.pf-dedup-fffde0 {
+    background: #fff;
+    border-radius: 6px;
+    max-height: 45px;
+    padding: 4px;
+}
+
+.pf-dedup-3eb549 {
+    color: #ffffff;
+}
+
+.pf-dedup-e2f701 {
+    align-items: center;
+    display: flex;
+}
+
+.pf-dedup-56115e {
+    margin-top: auto;
+}
+
+.pf-dedup-53896a {
+    margin-top: 0;
+}
+
+.pf-dedup-c451fd {
+    position: relative;
+}
+
+.pf-dedup-d685f1 {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 300px;
+    z-index: 100;
+}
+
+.pf-dedup-df761f {
+    border-bottom: 1px solid #e2e8f0;
+    color: #0f172a;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.pf-dedup-944892 {
+    color: #64748b;
+    font-size: 13px;
+    padding: 15px;
+    text-align: center;
+}
+
+.pf-dedup-564b7d {
+    border: none;
+    padding-left: 0;
+}
+
+.pf-dedup-375d5b {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 40px;
+}
+
+.pf-dedup-ac4e39 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pf-dedup-20f3dc {
+    /* display: grid; */
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.pf-dedup-867e5d {
+    color: #1e293b;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.pf-dedup-0785ee {
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    padding: 14px;
+    transition: all 0.2s;
+    width: 90%;
+}
+
+.pf-dedup-59aa04 {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    padding: 14px;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.pf-dedup-cb4589 {
+    display: none;
+}
+
+.pf-dedup-3fb820 {
+    color: #64748b;
+    display: block;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.pf-dedup-f601c6 {
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.pf-dedup-2d0029 {
+    background-color: #064e3b;
+    border-color: #064e3b;
+    font-weight: 600;
+    padding: 12px 24px;
+}
+
+.pf-dedup-d579cd {
+    appearance: auto;
+    cursor: pointer;
+}
+
+.pf-dedup-83552a {
+    background-color: #064e3b;
+    border-color: #064e3b;
+}
+
+.pf-dedup-17f595 {
+    padding: 20px;
+    text-align: center;
+}
+
+.pf-dedup-13076d {
+    text-align: center;
+}
+
+.pf-dedup-8b7832 {
+    background-color: #f1f5f9;
+    color: #475569;
+}
+
+.pf-dedup-5a2e92 {
+    background-color: #fffbeb;
+    color: #b45309;
+}
+
+.pf-dedup-56ac88 {
+    background-color: #e2e8f0;
+    color: #475569;
+}
+
+.pf-dedup-1ca509 {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.pf-dedup-d2abea {
+    color: #64748b;
+}
+
+.pf-dedup-41a6e1 {
+    color: #ef4444;
+    padding: 20px;
+    text-align: center;
+}
+
+.pf-dedup-035243 {
+    padding: 6px 12px;
+}
+
+.pf-dedup-253ab5 {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.pf-dedup-1e29ee {
+    font-weight: 500;
+}
+
+.pf-dedup-1ef675 {
+    color: #64748b;
+    font-size: 11px;
+}
+
+.pf-dedup-6e1f62 {
+    color: #475569;
+    font-size: 13px;
+}
+
+.pf-dedup-4c522b {
+    color: #94a3b8;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.pf-dedup-c9e033 {
+    background-color: #e0e7ff;
+    color: #3730a3;
+}
+
+.pf-dedup-0feb65 {
+    align-items: center;
+    background-color: #064e3b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.pf-dedup-786cae {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.pf-dedup-6d676d {
+    font-size: 16px;
+    margin: 0;
+}
+
+.pf-dedup-043b8c {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.pf-dedup-2a2823 {
+    background: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 350px;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.pf-dedup-4c1a26 {
+    color: #94a3b8;
+    font-size: 12px;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: center;
+}
+
+.pf-dedup-d466b1 {
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+}
+
+.pf-dedup-cc838c {
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    flex: 1;
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+}
+
+.pf-dedup-70512e {
+    background: #064e3b;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.pf-dedup-c1c580 {
+    border-bottom: 1px solid #e2e8f0;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.pf-dedup-eca18a {
+    background: #e0f2fe;
+    color: #0284c7;
+}
+
+.pf-dedup-3c3e97 {
+    background: #d1fae5;
+    color: #059669;
+}
+
+.pf-dedup-d08dd9 {
+    background: #ccfbf1;
+    color: #0d9488;
+}
+
+.pf-dedup-a7c381 {
+    background: #e0e7ff;
+    color: #4f46e5;
+}
+
+.pf-dedup-1fe05c {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.pf-dedup-38e67a {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.pf-dedup-f96db8 {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.pf-dedup-ea9dfc {
+    align-items: center;
+    background: #f1f5f9;
+    border-radius: 8px;
+    color: #0f172a;
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    width: 35px;
+}
+
+.pf-dedup-6e69b4 {
+    color: #64748b;
+    font-size: 13px;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pf-dedup-cfb7cc {
+    display: flex;
+    gap: 5px;
+}
+
+.pf-dedup-450fbb {
+    background: #f8fafc;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+    color: #475569;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.pf-dedup-c25576 {
+    color: #64748b;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.pf-dedup-35b45b {
+    color: #064e3b;
+    font-weight: 600;
+}
+
+.pf-dedup-63c770 {
+    background: #fce7f3;
+    color: #be185d;
+}
+
+.pf-dedup-350e61 {
+    color: #64748b;
+    padding: 30px;
+    text-align: center;
+}
+
+.pf-dedup-7377ba {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.pf-dedup-c31e91 {
+    background-color: #fef9c3;
+    color: #854d0e;
+}
+
+.pf-dedup-1d2597 {
+    color: #1e293b;
+    font-weight: 500;
+}
+
+.pf-dedup-4b7af7 {
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+    font-size: 12px;
+    padding: 6px;
+}
+
+.pf-dedup-f6e3d7 {
+    text-align: right;
+}
+
+.pf-dedup-d8427f {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pf-dedup-8ba16d {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.pf-dedup-a75c23 {
+    display: flex;
+    gap: 20px;
+}
+
+.pf-dedup-da5cd6 {
+    flex: 1;
+}
+
+.pf-dedup-811669 {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.pf-dedup-1219cb {
+    cursor: not-allowed;
+    opacity: 0.7;
+    text-transform: capitalize;
+}
+
+.pf-dedup-e03159 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.pf-dedup-b202c6 {
+    cursor: pointer;
+}
+
+.pf-dedup-ae54ef {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.55);
+    display: none;
+    inset: 0;
+    justify-content: center;
+    position: fixed;
+    z-index: 3000;
+}
+
+.pf-dedup-a0a810 {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 560px;
+}
+
+.pf-dedup-622f6b {
+    align-items: center;
+    background: linear-gradient(135deg, #1e3a5f, #2563eb);
+    border-radius: 16px 16px 0 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 24px;
+}
+
+.pf-dedup-57ae16 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pf-dedup-d10994 {
+    margin-right: 8px;
+}
+
+.pf-dedup-d044c4 {
+    font-size: 12px;
+    margin-top: 2px;
+    opacity: 0.8;
+}
+
+.pf-dedup-7b5594 {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.pf-dedup-ca8e2e {
+    padding: 20px 24px;
+}
+
+.pf-dedup-66751c {
+    color: #9ca3af;
+    padding: 30px;
+    text-align: center;
+}
+
+.pf-dedup-1a1b6d {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    inset: 0;
+    justify-content: center;
+    position: fixed;
+    z-index: 2000;
+}
+
+.pf-dedup-0f5895 {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 450px;
+}
+
+.pf-dedup-654257 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.pf-dedup-1386d5 {
+    margin: 0;
+}
+
+.pf-dedup-0155c6 {
+    background: none;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+}
+
+.pf-dedup-2cb61d {
+    color: #475569;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pf-dedup-9ab9be {
+    margin-bottom: 15px;
+}
+
+.pf-dedup-034617 {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.pf-dedup-9d728a {
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    padding: 10px;
+    width: 100%;
+}
+
+.pf-dedup-e1b245 {
+    margin-bottom: 25px;
+}
+
+.pf-dedup-d012df {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.pf-dedup-5efc21 {
+    background: #ede9fe;
+    color: #7c3aed;
+}
+
+.pf-dedup-1a83e3 {
+    background: #1d4ed8;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 14px;
+}
+
+.pf-dedup-4b0af8 {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.pf-dedup-44a5b9 {
+    align-items: center;
+    background: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid #f3f4f6;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    padding: 12px;
+}
+
+.pf-dedup-89bd09 {
+    flex: 1;
+    min-width: 0;
+}
+
+.pf-dedup-c02f77 {
+    color: #1e1b4b;
+    font-size: 13px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pf-dedup-b26cdf {
+    color: #9ca3af;
+    font-size: 11px;
+}
+
+.pf-dedup-c2208b {
+    color: #6b7280;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.pf-dedup-332b21 {
+    color: #2563eb;
+    margin-right: 6px;
+}
+
+.pf-dedup-b6b503 {
+    color: #9ca3af;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.pf-dedup-38f306 {
+    color: #6b7280;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    margin: 16px 0 10px;
+    text-transform: uppercase;
+}
+
+.pf-dedup-be1238 {
+    color: #059669;
+    margin-right: 6px;
+}
+
+.pf-dedup-4b9fe3 {
+    color: #ef4444;
+    text-align: center;
+}
+
+.pf-dedup-8a63b2 {
+    padding-right: 40px;
+}
+
+.pf-dedup-1089b2 {
+    background-color: #fef08a;
+    color: #854d0e;
+}
+
+.pf-dedup-8f7787 {
+    width: 200px;
+}
+
+.pf-dedup-5c0746 {
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    height: 8px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.pf-dedup-6b1129 {
+    background-color: #064e3b;
+    height: 100%;
+    width: 66%;
+}
+
+.pf-dedup-dde268 {
+    color: #64748b;
+    font-size: 11px;
+    text-align: right;
+}
+
+.pf-dedup-ad5ceb {
+    background-color: #064e3b;
+    height: 100%;
+    width: 90%;
+}
+
+.pf-dedup-e1ba52 {
+    background-color: #064e3b;
+    height: 100%;
+    width: 25%;
+}
+
+.pf-dedup-5f58e9 {
+    background-color: #ffe4e6;
+    color: #9f1239;
+}
+
+.pf-dedup-5d90cc {
+    padding-right: 40px;
+    width: 250px;
+}
+
+.pf-dedup-76a03a {
+    color: #64748b;
+    display: flex;
+    font-size: 11px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.pf-dedup-5ed951 {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.pf-dedup-bf83df {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.pf-dedup-936c62 {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.pf-dedup-d1ed8a {
+    color: #64748b;
+    font-size: 13px;
+    max-width: 250px;
+}
+
+.pf-dedup-10efee {
+    max-width: 900px;
+}
+
+.pf-dedup-cb0b02 {
+    background: #f8fafc;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.pf-dedup-8cd4ae {
+    color: #94a3b8;
+}
+
+.pf-dedup-7a7c90 {
+    background: transparent;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    margin-left: 10px;
+    outline: none;
+}
+
+.pf-dedup-cbd12c {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+.pf-dedup-c61bdc {
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    font-family: 'Inter', sans-serif;
+    padding: 8px;
+}
+
+.pf-dedup-44c466 {
+    background-color: #064e3b;
+    border-color: #064e3b;
+    font-size: 12px;
+    padding: 6px 15px;
+}
+
+.pf-dedup-56fd1b {
+    background-color: #064e3b;
+    border-color: #064e3b;
+    font-size: 12px;
+    opacity: 0.5;
+    padding: 6px 15px;
+}
+
+/* ==========================================================================
+   Mobile & Multi-Device Responsiveness (Role Isolated)
+   ========================================================================== */
+
+/* 1. Mobile controls and overlay styles */
+.mobile-toggle-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: #64748b;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 8px;
+    margin-right: 15px;
+    transition: color 0.2s;
+}
+
+.mobile-toggle-btn:hover {
+    color: #0f172a;
+}
+
+.sidebar-close-btn {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 15;
+    transition: color 0.2s;
+}
+
+.sidebar-close-btn:hover {
+    color: #ffffff;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 9;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+body.sidebar-open {
+    overflow: hidden;
+}
+
+/* 2. Media Query for Tablets and Mobiles (<= 992px) */
+@media (max-width: 992px) {
+    .mobile-toggle-btn {
+        display: flex;
+    }
+
+    .sidebar-close-btn {
+        display: block;
+    }
+
+    .sidebar {
+        position: fixed !important;
+        height: 100vh !important;
+        top: 0 !important;
+        left: 0 !important;
+        z-index: 1000 !important;
+        width: 250px !important;
+        transform: translateX(-100%) !important;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        box-shadow: 10px 0 25px -5px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .sidebar.active {
+        transform: translateX(0) !important;
+    }
+
+    .main-content {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 20px 100px 20px !important;
+        overflow-x: hidden !important;
+    }
+
+    .profile-card {
+        max-width: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .content-area {
+        padding: 10px 10px 10px 10px !important;
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dashboard-topbar {
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .brand-logo {
+        font-size: 18px;
+    }
+
+    .search-container {
+        display: none;
+    }
+}
+
+/* 3. Media Query for Small Screens (<= 768px) */
+@media (max-width: 768px) {
+    .dashboard-topbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .topbar-actions {
+        gap: 15px;
+    }
+
+    .user-profile {
+
+        padding-left: 15px;
+    }
+
+    .user-info {
+        display: none;
+    }
+
+    .dashboard-header {
+        margin-top: 20px !important;
+        padding: 0 !important;
+        text-align: left;
+    }
+
+    .dashboard-header h2 {
+        font-size: 22px !important;
+    }
+
+    /* Table scrolling adjustments */
+    .admin-table-section,
+    .portfolio-table-card,
+    .modern-table-card,
+    .remediation-table-container,
+    .table-container,
+    .table-responsive {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 6px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 20px;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+    }
+
+    table {
+        width: 100% !important;
+        margin: 0 !important;
+        table-layout: auto !important;
+        border-collapse: collapse !important;
+    }
+
+    table th,
+    table td,
+    table th *,
+    table td *,
+    table td[class],
+    table th[class] {
+        padding: 4px 2px !important;
+        font-size: 9px !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+    }
+
+    table button,
+    table a,
+    .table-action-btns,
+    .action-btn,
+    .badge,
+    .status-badge,
+    .status,
+    [class*="badge"],
+    [class*="status"] {
+        font-size: 8px !important;
+        padding: 2px 4px !important;
+    }
+
+    /* Dynamically Detected Grids & Flex Override Blocks */
+    .pf-dedup-20f3dc {
+        grid-template-columns: 1fr !important;
+    }
+
+    .pf-dedup-f601c6,
+    .pf-dedup-e03159,
+    .pf-dedup-d012df {
+        flex-direction: column-reverse !important;
+        gap: 10px !important;
+        padding-top: 15px !important;
+        margin-top: 5px !important;
+    }
+
+    .pf-dedup-f601c6 button,
+    .pf-dedup-f601c6 a,
+    .pf-dedup-e03159 button,
+    .pf-dedup-e03159 a,
+    .pf-dedup-d012df button,
+    .pf-dedup-d012df a,
+    .btn-dark,
+    .btn-outline {
+        width: 100% !important;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Mobile Grid & Form Stacking Overrides */
+    .form-grid,
+    .form-grid-2,
+    .form-grid-3,
+    .stats-grid,
+    .profile-grid,
+    .portfolio-cards-grid,
+    .action-cards-grid,
+    .screenshot-grid,
+    .file-preview-grid,
+    .financial-metrics-grid,
+    .metrics-grid,
+    .summary-cards {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+
+    .form-row,
+    .flex-row,
+    .button-group {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    .form-row input,
+    .form-row select,
+    .form-row textarea,
+    .form-row button,
+    .flex-row input,
+    .flex-row select,
+    .flex-row textarea,
+    .flex-row button,
+    .button-group button,
+    .button-group a {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+}

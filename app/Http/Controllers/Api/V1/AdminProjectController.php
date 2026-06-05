@@ -18,7 +18,7 @@ class AdminProjectController extends Controller
     */
     public function index(Request $request)
     {
-        $query = Project::with(['documents', 'user:id,name,email', 'deliverables'])
+        $query = Project::with(['documents', 'user:id,name,email', 'deliverables', 'milestones'])
             ->latest('submitted_at');
 
         // Allow filtering by status
@@ -109,7 +109,7 @@ class AdminProjectController extends Controller
                 'type'    => 'project_' . $request->status,
                 'title'   => $titles[$request->status] ?? 'Project Status Updated',
                 'body'    => $bodies[$request->status] ?? 'Your project status has been updated.',
-                'link'    => '/pages/dashboard/user/dashboard.html',
+                'link'    => '/dashboard/user',
             ]);
         }
 
@@ -162,7 +162,7 @@ class AdminProjectController extends Controller
                     'type'    => 'project_approved',
                     'title'   => '✅ Project Approved!',
                     'body'    => "Congratulations! Your project \"{$project->title}\" has been fully approved for funding deployment as all milestones are complete.",
-                    'link'    => '/pages/dashboard/user/dashboard.html',
+                    'link'    => '/dashboard/user',
                 ]);
             }
 
@@ -185,7 +185,7 @@ class AdminProjectController extends Controller
                         ? '✅ Vetting Milestone Completed'
                         : '🔄 Vetting Milestone Reset',
                     'body'    => "Milestone \"{$milestone->title}\" on your project \"{$project->title}\" has been marked as {$request->status}.",
-                    'link'    => '/pages/dashboard/user/dashboard.html',
+                    'link'    => '/dashboard/user',
                 ]);
             }
         }
