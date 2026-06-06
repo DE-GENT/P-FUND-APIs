@@ -277,7 +277,7 @@
             formData.append('avatar', fileInput.files[0]);
 
             try {
-                const response = await fetch('http://127.0.0.1:8000/api/v1/me/avatar', {
+                const response = await fetch(`${window.location.origin}/api/v1/me/avatar`, {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json',

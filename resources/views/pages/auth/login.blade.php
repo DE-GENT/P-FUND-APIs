@@ -102,7 +102,7 @@
             if (!email || !email.includes('@')) return;
 
             try {
-                const response = await fetch('http://127.0.0.1:8000/api/v1/auth/check-email', {
+                const response = await fetch(`${window.location.origin}/api/v1/auth/check-email`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -153,7 +153,7 @@
             submitBtn.disabled = true;
 
             try {
-                const response = await fetch('http://127.0.0.1:8000/api/v1/auth/login', {
+                const response = await fetch(`${window.location.origin}/api/v1/auth/login`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

@@ -191,7 +191,7 @@
     
             try {
                 // Call our Laravel API
-                const response = await fetch('http://127.0.0.1:8000/api/v1/auth/verify-email', {
+                const response = await fetch(`${window.location.origin}/api/v1/auth/verify-email`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -248,7 +248,7 @@
             if (!token) return;
     
             try {
-                const response = await fetch('http://127.0.0.1:8000/api/v1/auth/resend-verification-code', {
+                const response = await fetch(`${window.location.origin}/api/v1/auth/resend-verification-code`, {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json',

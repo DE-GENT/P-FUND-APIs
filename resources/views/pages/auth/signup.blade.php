@@ -465,14 +465,14 @@
            console.log('Sending payload:', JSON.stringify(payload));
    
            try {
-               const response = await fetch('http://127.0.0.1:8000/api/v1/auth/register', {
-                   method: 'POST',
-                   headers: {
-                       'Content-Type': 'application/json',
-                       'Accept':       'application/json',
-                   },
-                   body: JSON.stringify(payload),
-               });
+                const response = await fetch(`${window.location.origin}/api/v1/auth/register`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept':       'application/json',
+                    },
+                    body: JSON.stringify(payload),
+                });
    
                const data = await response.json();
                console.log('Server response:', JSON.stringify(data));
