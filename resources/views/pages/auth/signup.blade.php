@@ -304,7 +304,7 @@
                         <!-- Col 1: Field of Specialty -->
                         <div class="form-group">
                             <label>FIELD OF SPECIALTY</label>
-                            <input id="field_of_specialty" type="text" placeholder="City, Country">
+                            <input id="field_of_specialty" type="text" placeholder="Engineering, Medical">
                             <!-- The design mock identically puts 'City, Country' here -->
                         </div>
 

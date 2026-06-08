@@ -105,7 +105,7 @@
                             <input type="text" id="project-title-input" required>
                         </div>
                         <div class="form-group">
-                            <label>Funding Requested (USD)</label>
+                            <label>Funding Requested (FCFA)</label>
                             <input type="number" id="project-budget-input" required>
                         </div>
                         <div class="form-group pf-dedup-b45265">

@@ -314,7 +314,7 @@
                         </td>
                         <td><div class="project-date-text">${dateStr}</div></td>
                         <td><span class="status-pill ${stageClass}">${stageText}</span></td>
-                        <td><div class="project-funding">$${parseFloat(p.budget_amount).toLocaleString(undefined, { minimumFractionDigits: 0 })}</div></td>
+                        <td><div class="project-funding">${parseFloat(p.budget_amount).toLocaleString(undefined, { minimumFractionDigits: 0 })}</div></td>
                         <td><span class="status-pill status-update">Update Required</span></td>
                         <td class="pf-dedup-13076d">
                             <a class="pf-dedup-b5df23" href="{{ route('user.edit-update') }}?project_id=${p.id}">
