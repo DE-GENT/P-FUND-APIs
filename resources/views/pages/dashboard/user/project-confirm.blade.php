@@ -69,13 +69,13 @@
                         <i class="fa-regular fa-circle-question"></i>
                     </button>
                     
-                    <div class="user-profile">
+                    <a href="{{ route('user.profile') }}" style="text-decoration: none; cursor: pointer;" class="user-profile">
                         <div class="user-info">
                             <span class="name" id="display-name">-</span>
                             <span class="role" id="display-role">PROJECT SPONSOR</span>
                         </div>
                         <img src="" alt="Avatar" class="avatar" id="display-avatar">
-                    </div>
+                    </a>
                 </div>
             </header>
 

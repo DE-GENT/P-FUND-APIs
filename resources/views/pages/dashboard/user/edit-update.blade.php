@@ -71,13 +71,13 @@
                         <i class="fa-regular fa-circle-question"></i>
                     </button>
                     
-                    <div class="user-profile">
+                    <a href="{{ route('user.profile') }}" style="text-decoration: none; cursor: pointer;" class="user-profile">
                         <div class="user-info">
                             <span class="name">Alex Rivers</span>
                             <span class="role">FOUNDER & CEO</span>
                         </div>
                         <img src="https://ui-avatars.com/api/?name=Alex+Rivers&background=0D8ABC&color=fff&rounded=true" alt="Alex Rivers" class="avatar">
-                    </div>
+                    </a>
                 </div>
             </header>
 

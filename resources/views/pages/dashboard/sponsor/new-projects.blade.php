@@ -50,10 +50,10 @@
                     </div>
                 </div>
 
-                <div class="pf-dedup-d27166">
+                <a href="{{ route('sponsor.profile') }}" style="text-decoration: none; cursor: pointer;" class="pf-dedup-d27166">
                     <span class="pf-dedup-093364" id="userName">Hello, Sponsor</span>
                     <img class="pf-dedup-b91b77" id="userAvatar" src="https://ui-avatars.com/api/?name=Sponsor&background=3b82f6&color=fff&rounded=true" alt="Avatar">
-                </div>
+                </a>
             </div>
         </div>
 

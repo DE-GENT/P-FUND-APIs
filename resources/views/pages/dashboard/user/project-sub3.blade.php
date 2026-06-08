@@ -73,13 +73,13 @@
                         <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     </button>
                     
-                    <div class="user-profile">
+                    <a href="{{ route('user.profile') }}" style="text-decoration: none; cursor: pointer;" class="user-profile">
                         <div class="user-info">
                             <span class="name" id="display-name">Loading...</span>
                             <span class="role" id="display-role">USER</span>
                         </div>
                         <img src="https://ui-avatars.com/api/?name=User&background=0D8ABC&color=fff&rounded=true" alt="User" class="avatar" id="display-avatar">
-                    </div>
+                    </a>
                 </div>
             </header>
 
@@ -273,8 +273,8 @@
             const request = parseFloat(fundingRequestInput.value) || 0;
             const equity = parseFloat(percentageSponsorInput.value) || 0;
 
-            metricTotal.textContent = `${total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-            metricRequest.textContent = `${request.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            metricTotal.textContent = `$${total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            metricRequest.textContent = `$${request.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
             metricEquity.textContent = `${equity}%`;
 
             // Sponsor equity color / styling tip

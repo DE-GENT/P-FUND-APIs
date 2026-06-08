@@ -73,13 +73,13 @@
                         <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     </button>
                     
-                    <div class="user-profile">
+                    <a href="{{ route('user.profile') }}" style="text-decoration: none; cursor: pointer;" class="user-profile">
                         <div class="user-info">
                             <span class="name" id="display-name">Loading...</span>
                             <span class="role" id="display-role">USER</span>
                         </div>
                         <img src="https://ui-avatars.com/api/?name=User&background=0D8ABC&color=fff&rounded=true" alt="User" class="avatar" id="display-avatar">
-                    </div>
+                    </a>
                 </div>
             </header>
 

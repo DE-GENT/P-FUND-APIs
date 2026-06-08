@@ -106,9 +106,9 @@
                     
                     
 
-                    <div class="user-profile pf-dedup-564b7d">
+                    <a href="{{ route('admin.profile') }}" style="text-decoration: none; cursor: pointer;" class="user-profile pf-dedup-564b7d">
                         <img src="https://ui-avatars.com/api/?name=Admin&background=0a192f&color=fff&rounded=true" alt="Admin" class="avatar" id="display-avatar">
-                    </div>
+                    </a>
                 </div>
             </header>
 

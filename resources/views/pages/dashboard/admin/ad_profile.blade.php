@@ -82,13 +82,13 @@
             <div class="brand-logo">The Sovereign Ledger</div>
             
             <div class="topbar-actions">
-                <div class="user-profile">
+                <a href="{{ route('admin.profile') }}" style="text-decoration: none; cursor: pointer;" class="user-profile">
                     <div class="pf-dedup-f6e3d7" style="text-align: right; margin-right: 10px;">
                         <div class="pf-dedup-d8427f" id="header-name" style="font-weight: 700; color: #0f172a; font-size: 14px;">Admin User</div>
                         <div class="pf-dedup-8ba16d" style="font-size: 10px; color: #64748b; text-transform: uppercase;">Sovereign Admin</div>
                     </div>
                     <img id="display-avatar" src="https://ui-avatars.com/api/?name=Admin&background=064e3b&color=fff&rounded=true" alt="Profile" class="avatar">
-                </div>
+                </a>
             </div>
         </header>
 

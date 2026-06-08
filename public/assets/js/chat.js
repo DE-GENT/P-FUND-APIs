@@ -87,7 +87,10 @@ async function fetchGlobalMessages(isBackgroundCheck = false) {
             const senderId = msg.user ? msg.user.id : null;
             const senderRole = msg.user ? msg.user.role : null;
             const friendlyRole = msg.user ? msg.user.friendly_role : null;
-            const isMe = currentUser && currentUser.id && senderId && Number(senderId) === Number(currentUser.id);
+            const isMe = currentUser && (
+                (currentUser.id && senderId && Number(senderId) === Number(currentUser.id)) ||
+                (currentUser.email && msg.user && msg.user.email === currentUser.email)
+            );
 
             // Check for private message
             const recipientName = msg.recipient ? msg.recipient.name : null;

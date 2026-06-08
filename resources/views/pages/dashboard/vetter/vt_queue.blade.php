@@ -52,10 +52,10 @@
                     </button>
                     <div id="notif-dropdown" style="display:none; position: absolute; right: 0; top: 50px; background: white; border: 1px solid #e2e8f0; border-radius: 8px; width: 300px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); z-index: 100;"></div>
                 </div>
-                <div class="user-profile" style="border: none; padding-left: 0;">
+                <a href="{{ route('vetter.profile') }}" class="user-profile" style="text-decoration: none; cursor: pointer; border: none; padding-left: 0;">
                     <img src="https://ui-avatars.com/api/?name=Vetter&background=7c3aed&color=fff&rounded=true" alt="Vetter" class="avatar" id="display-avatar">
                     <span id="header-name" style="font-size: 14px; font-weight: 600; color: #1e1b4b;">Vetter</span>
-                </div>
+                </a>
             </div>
         </header>
 

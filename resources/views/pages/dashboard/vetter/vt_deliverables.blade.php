@@ -49,10 +49,10 @@
                     </button>
                     <div class="pf-dedup-d685f1" id="notif-dropdown"></div>
                 </div>
-                <div class="user-profile pf-dedup-564b7d">
+                <a href="{{ route('vetter.profile') }}" style="text-decoration: none; cursor: pointer;" class="user-profile pf-dedup-564b7d">
                     <img src="https://ui-avatars.com/api/?name=Vetter&background=7c3aed&color=fff&rounded=true" alt="Vetter" class="avatar" id="display-avatar">
                     <span class="pf-dedup-edc65a" id="header-name">Vetter</span>
-                </div>
+                </a>
             </div>
         </header>
 

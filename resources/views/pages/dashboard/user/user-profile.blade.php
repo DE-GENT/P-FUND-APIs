@@ -63,13 +63,13 @@
                     <button class="icon-btn" id="logout-btn" title="Logout">
                         <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     </button>
-                    <div class="user-profile">
+                    <a href="{{ route('user.profile') }}" class="user-profile" style="text-decoration: none;">
                         <div class="user-info">
                             <span class="name" id="display-name">Loading...</span>
                             <span class="role" id="display-role">USER</span>
                         </div>
                         <img src="" alt="Avatar" class="avatar" id="display-avatar">
-                    </div>
+                    </a>
                 </div>
             </header>
 
@@ -399,7 +399,7 @@
             document.getElementById('sec-email-status').className = `security-status ${u.email_verified_at ? 'status-ok' : 'status-warn'}`;
             document.getElementById('sec-role-display').innerHTML = `<i class="fa-solid fa-user-shield"></i> ${roleLabel}`;
 
-            const syncedUser = { name: u.name, role: u.role, email: u.email, avatar_url: u.avatar_url };
+            const syncedUser = { id: u.id, name: u.name, role: u.role, email: u.email, avatar_url: u.avatar_url };
             localStorage.setItem('user', JSON.stringify(syncedUser));
             localStorage.setItem('pfunds_user', JSON.stringify(syncedUser));
         }
@@ -749,6 +749,7 @@
                 if (userData) {
                     userData.avatar_url = url;
                     const syncedUser = {
+                        id: userData.id,
                         name: userData.name,
                         role: userData.role,
                         email: userData.email,
