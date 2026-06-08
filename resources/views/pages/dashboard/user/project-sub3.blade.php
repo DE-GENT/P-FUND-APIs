@@ -164,7 +164,7 @@
                                 <label class="pf-dedup-5f7abe">TOTAL BUSINESS COST</label>
                                 <div class="input-with-prefix">
                                     <span class="prefix"></span>
-                                    <input type="number" id="total_cost" class="form-control" placeholder="20,000,000FCFA" min="0" step="any">
+                                    <input type="number" id="total_cost" class="form-control" placeholder="20,000,000CFA" min="0" step="any">
                                 </div>
                                 <div class="input-helper-text">Include operational runway for first 12 months.</div>
                             </div>
@@ -172,7 +172,7 @@
                                 <label class="pf-dedup-5f7abe">FUNDING REQUEST AMOUNT</label>
                                 <div class="input-with-prefix">
                                     <span class="prefix"></span>
-                                    <input type="number" id="funding_request" class="form-control" placeholder="20,000,000FCFA" min="0" step="any">
+                                    <input type="number" id="funding_request" class="form-control" placeholder="20,000,000CFA" min="0" step="any">
                                 </div>
                                 <div class="input-helper-text">Maximum permissible: 80% of total cost.</div>
                             </div>
@@ -276,8 +276,8 @@
             const request = parseFloat(fundingRequestInput.value) || 0;
             const equity = parseFloat(percentageSponsorInput.value) || 0;
 
-            metricTotal.textContent = `${total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}FCFA`;
-            metricRequest.textContent = `${request.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}FCFA`;
+            metricTotal.textContent = `${total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}CFA`;
+            metricRequest.textContent = `${request.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}CFA`;
             metricEquity.textContent = `${equity}%`;
 
             // Sponsor equity color / styling tip

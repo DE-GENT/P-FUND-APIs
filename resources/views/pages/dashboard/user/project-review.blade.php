@@ -284,7 +284,7 @@
         function updateStats() {
             // Portfolio Total Value
             const totalVal = allProjects.reduce((sum, p) => sum + parseFloat(p.budget_amount || 0), 0);
-            document.getElementById('stat-portfolio-value').textContent = `$${totalVal.toLocaleString(undefined, { maximumFractionDigits: 0 })}`;
+            document.getElementById('stat-portfolio-value').textContent = `${totalVal.toLocaleString(undefined, { maximumFractionDigits: 0 })} CFA`;
             
             // Active Dossiers
             const activeCount = allProjects.filter(p => p.status !== 'rejected').length;
@@ -412,8 +412,8 @@
                             </div>
                         </td>
                         <td>
-                            <div class="p-funding-val">$${parseFloat(p.budget_amount).toLocaleString(undefined, { minimumFractionDigits: 0 })}</div>
-                            <div class="p-funding-sub">USD</div>
+                             <div class="p-funding-val">${parseFloat(p.budget_amount).toLocaleString(undefined, { minimumFractionDigits: 0 })} CFA</div>
+                             <div class="p-funding-sub">CFA</div>
                         </td>
                         <td><span class="p-pill ${statusPillClass}">${statusLabel}</span></td>
                         <td class="p-actions">

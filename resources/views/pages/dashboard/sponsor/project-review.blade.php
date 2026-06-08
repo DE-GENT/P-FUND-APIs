@@ -244,8 +244,7 @@
                 document.getElementById('modal-project-title').textContent = project.title;
                 document.getElementById('modal-project-category').textContent = project.category || 'N/A';
                 
-                const currencySymbol = project.currency ? (project.currency === 'USD' ? '$' : (project.currency === 'NGN' ? '₦' : project.currency)) : '$';
-                const formattedBudget = currencySymbol + Number(project.budget || 0).toLocaleString();
+                const formattedBudget = Number(project.budget || 0).toLocaleString() + ' CFA';
                 document.getElementById('modal-project-budget').textContent = formattedBudget;
                 
                 document.getElementById('modal-project-creator').textContent = project.creator ? project.creator.name : 'Unknown';

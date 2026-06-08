@@ -293,7 +293,7 @@
                                 </div>
                             </td>
                             <td>${p.user ? p.user.name : 'Unknown'}</td>
-                            <td>$${parseFloat(p.budget_amount).toLocaleString()}</td>
+                            <td>${parseFloat(p.budget_amount).toLocaleString()} CFA</td>
                             <td>${new Date(p.submitted_at || p.created_at).toLocaleDateString()}</td>
                             <td>
                                 <div class="table-action-btns">

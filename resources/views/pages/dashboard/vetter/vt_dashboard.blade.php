@@ -218,12 +218,10 @@ function renderQueue(projects) {
         tbody.innerHTML = `<tr><td colspan="6"><div class="empty-state"><i class="fa-solid fa-inbox"></i>No projects in the vetting queue.</div></td></tr>`;
         return;
     }
-    const currencies = { USD: '$', NGN: '₦', EUR: '€', GBP: '£' };
     tbody.innerHTML = projects.map(p => {
         const done    = (p.milestones || []).filter(m => m.status === 'completed').length;
         const total   = (p.milestones || []).length || 3;
         const dots    = Array.from({ length: total }, (_, i) => `<div class="ms-dot ${i < done ? 'done' : 'pending'}"></div>`).join('');
-        const sym     = currencies[p.budget_currency] || '$';
         const budget  = parseFloat(p.budget_amount || 0).toLocaleString();
         return `<tr>
             <td>
@@ -232,7 +230,7 @@ function renderQueue(projects) {
             </td>
             <td>${p.user ? p.user.name : '—'}</td>
             <td><span class="pill pill-vetting">${p.category || 'N/A'}</span></td>
-            <td>${sym}${budget}</td>
+            <td>${budget} CFA</td>
             <td>
                 <div class="milestone-bar">${dots}</div>
                 <div class="pf-dedup-59e05d">${done}/${total} done</div>

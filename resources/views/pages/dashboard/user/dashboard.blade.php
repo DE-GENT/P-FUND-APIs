@@ -378,14 +378,7 @@
                         });
 
                         // Format Funding
-                        const symbolMap = {
-                            'USD': '$',
-                            'NGN': '₦',
-                            'EUR': '€',
-                            'GBP': '£'
-                        };
-                        const currencySymbol = symbolMap[project.budget_currency] || project.budget_currency || '$';
-                        const formattedFunding = `${currencySymbol}${parseFloat(project.budget_amount).toLocaleString()}`;
+                        const formattedFunding = `${parseFloat(project.budget_amount).toLocaleString()} CFA`;
 
                         // Cleanup description markdown for preview
                         const rawDesc = project.description || '';

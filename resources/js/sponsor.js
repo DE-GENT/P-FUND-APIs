@@ -175,7 +175,7 @@ function renderNewProjects(projects) {
             <td style="color: #cbd5e1;"><i class="fa-solid fa-user-circle"></i> ${creatorName}</td>
             <td style="font-weight: 600;">${project.title}</td>
             <td style="color: #cbd5e1;">${project.description.length > 50 ? project.description.substring(0, 50) + '...' : project.description}</td>
-            <td style="font-weight: bold; color: #10b981;">${project.budget_currency} ${Number(project.budget_amount).toLocaleString()}</td>
+            <td style="font-weight: bold; color: #10b981;">${Number(project.budget_amount).toLocaleString()} CFA</td>
             <td style="display: flex; gap: 0.5rem;">
                 <button class="action-btn" onclick="viewDetails(${project.id})" title="View More"><i class="fa-solid fa-eye"></i></button>
                 <button class="action-btn btn-like" onclick="interactWithProject(${project.id}, 'like')" title="Interested"><i class="fa-solid fa-heart"></i></button>

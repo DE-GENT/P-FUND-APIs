@@ -209,14 +209,7 @@
                 const creatorName = project.creator ? project.creator.name : (project.user ? project.user.name : 'Unknown Creator');
                 
                 // Format Funding
-                const symbolMap = {
-                    'USD': '$',
-                    'NGN': '₦',
-                    'EUR': '€',
-                    'GBP': '£'
-                };
-                const currencySymbol = symbolMap[project.budget_currency] || project.budget_currency || '$';
-                const formattedFunding = `${currencySymbol}${parseFloat(project.budget_amount).toLocaleString()}`;
+                const formattedFunding = `${parseFloat(project.budget_amount).toLocaleString()} CFA`;
                 const rawDesc = project.description || '';
                 const previewDesc = rawDesc.length > 80 ? rawDesc.substring(0, 80) + '...' : rawDesc;
 
@@ -258,8 +251,7 @@
                 document.getElementById('modal-project-title').textContent = project.title;
                 document.getElementById('modal-project-category').textContent = project.category || 'N/A';
                 
-                const currencySymbol = project.currency ? (project.currency === 'USD' ? '$' : (project.currency === 'NGN' ? '₦' : project.currency)) : '$';
-                const formattedBudget = currencySymbol + Number(project.budget || 0).toLocaleString();
+                const formattedBudget = Number(project.budget || 0).toLocaleString() + ' CFA';
                 document.getElementById('modal-project-budget').textContent = formattedBudget;
                 
                 document.getElementById('modal-project-creator').textContent = project.creator ? project.creator.name : 'Unknown';

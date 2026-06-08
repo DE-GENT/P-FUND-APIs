@@ -186,11 +186,11 @@
                 <div class="financial-metrics-grid">
                     <div class="financial-metric-box">
                         <span class="financial-metric-label">Total Cost</span>
-                        <span class="financial-metric-value" id="review-total-cost">FCFA</span>
+                        <span class="financial-metric-value" id="review-total-cost">CFA</span>
                     </div>
                     <div class="financial-metric-box highlight">
                         <span class="financial-metric-label">Funding Request</span>
-                        <span class="financial-metric-value" id="review-funding-request">FCFA</span>
+                        <span class="financial-metric-value" id="review-funding-request">CFA</span>
                     </div>
                     <div class="financial-metric-box">
                         <span class="financial-metric-label">Sponsor Stake</span>
@@ -270,8 +270,8 @@
         const fundingRequest = parseFloat(draftObj.funding_request) || 0;
         const percentageSponsor = parseFloat(draftObj.percentage_sponsor) || 0;
 
-        document.getElementById('review-total-cost').textContent = `${totalCost.toLocaleString(undefined, { minimumFractionDigits: 2 })}FCFA`;
-        document.getElementById('review-funding-request').textContent = `${fundingRequest.toLocaleString(undefined, { minimumFractionDigits: 2 })}FCFA`;
+        document.getElementById('review-total-cost').textContent = `${totalCost.toLocaleString(undefined, { minimumFractionDigits: 2 })}CFA`;
+        document.getElementById('review-funding-request').textContent = `${fundingRequest.toLocaleString(undefined, { minimumFractionDigits: 2 })}CFA`;
         document.getElementById('review-sponsor-stake').textContent = `${percentageSponsor}%`;
         document.getElementById('review-sponsorship-reason').textContent = draftObj.sponsorship_reason ? `"${draftObj.sponsorship_reason}"` : '-';
 
@@ -396,7 +396,7 @@ ${draftObj.sponsorship_reason}
                 formData.append('description', descriptionMarkdown);
                 formData.append('category', mapSpecialtyToCategory(draftObj.specialty));
                 formData.append('budget_amount', draftObj.funding_request);
-                formData.append('budget_currency', 'FCFA');
+                formData.append('budget_currency', 'XAF');
 
                 if (videoFile) {
                     formData.append('documents[]', videoFile);
@@ -421,7 +421,7 @@ ${draftObj.sponsorship_reason}
                 localStorage.setItem('last_submitted_project', JSON.stringify({
                     id: `PRJ-${String(project.id).padStart(5, '0')}`,
                     title: project.title,
-                    funding: `${parseFloat(project.budget_amount).toLocaleString(undefined, { minimumFractionDigits: 2 })} FCFA`,
+                    funding: `${parseFloat(project.budget_amount).toLocaleString(undefined, { minimumFractionDigits: 2 })} CFA`,
                     timestamp: new Date().toLocaleDateString('en-US', {
                         month: 'long',
                         day: 'numeric',

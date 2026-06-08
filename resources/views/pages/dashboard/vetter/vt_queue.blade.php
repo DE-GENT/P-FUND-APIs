@@ -181,13 +181,12 @@ function renderProjectList(projects) {
         const done  = (p.milestones || []).filter(m => m.status === 'completed').length;
         const total = (p.milestones || []).length || 3;
         const pct   = Math.round((done / total) * 100);
-        const sym   = currencies[p.budget_currency] || '$';
         return `<div class="project-card ${selectedProjectId === p.id ? 'selected' : ''}" onclick="selectProject(${p.id})" id="card-${p.id}">
             <div class="project-card-title">${p.title}</div>
             <div class="project-card-meta">
                 <span><i class="fa-regular fa-user"></i>${p.user ? p.user.name : 'Unknown'}</span>
                 <span><i class="fa-solid fa-tag"></i>${p.category || 'General'}</span>
-                <span><i class="fa-solid fa-dollar-sign"></i>${sym}${parseFloat(p.budget_amount || 0).toLocaleString()}</span>
+                <span><i class="fa-solid fa-money-bill-wave"></i>${parseFloat(p.budget_amount || 0).toLocaleString()} CFA</span>
             </div>
             <div class="progress-bar-track" style="margin-top:10px;">
                 <div class="progress-bar-fill" style="width:${pct}%;"></div>
@@ -232,7 +231,7 @@ function renderDetailPanel(p) {
     const done  = milestones.filter(m => m.status === 'completed').length;
     const total = milestones.length;
     const allDone = done === total && total > 0;
-    const sym   = currencies[p.budget_currency] || '$';
+
 
     const msHTML = milestones.map(m => {
         const isDone = m.status === 'completed';
@@ -263,7 +262,7 @@ function renderDetailPanel(p) {
         ${allDone ? `<div class="all-done-banner"><i class="fa-solid fa-check-circle"></i> All milestones complete! This project is ready for final approval.</div>` : ''}
 
         <div class="detail-info">
-            <div class="info-row"><span>Budget</span><span>${sym}${parseFloat(p.budget_amount || 0).toLocaleString()}</span></div>
+            <div class="info-row"><span>Budget</span><span>${parseFloat(p.budget_amount || 0).toLocaleString()} CFA</span></div>
             <div class="info-row"><span>Submitted</span><span>${p.submitted_at ? new Date(p.submitted_at).toLocaleDateString() : '—'}</span></div>
             <div class="info-row"><span>Accepted by Admin</span><span>${p.reviewed_at ? new Date(p.reviewed_at).toLocaleDateString() : '—'}</span></div>
             <div class="info-row"><span>Progress</span><span>${done}/${total} milestones</span></div>

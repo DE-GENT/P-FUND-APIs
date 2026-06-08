@@ -15,7 +15,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('category')->default('other');
             $table->decimal('budget_amount', 15, 2)->default(0);
-            $table->string('budget_currency', 3)->default('NGN');
+            $table->string('budget_currency', 3)->default('XAF');
             $table->string('status')->default('draft');
             $table->text('admin_remarks')->nullable();
             $table->timestamp('submitted_at')->nullable();
