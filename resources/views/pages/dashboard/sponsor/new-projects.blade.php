@@ -25,10 +25,10 @@
             <div class="role-subtitle">FUNDING AUTHORITY</div>
         </div>
         <nav class="sidebar-nav">
-            <a href="{{ route('sponsor.dashboard') }}" class="nav-item"><i class="fa-solid fa-border-all"></i> Dashboard</a>
-            <a href="{{ route('sponsor.new-projects') }}" class="nav-item active"><i class="fa-solid fa-bolt"></i> New Projects</a>
-            <a href="{{ route('sponsor.project-review') }}" class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i> Project Review</a>
-            <a href="{{ route('sponsor.profile') }}" class="nav-item"><i class="fa-regular fa-circle-user"></i> Profile</a>
+            <a href="{{ route('sponsor.dashboard') }}" class="nav-item {{ request()->routeIs('sponsor.dashboard') ? 'active' : '' }}"><i class="fa-solid fa-border-all"></i> Dashboard</a>
+            <a href="{{ route('sponsor.new-projects') }}" class="nav-item {{ request()->routeIs('sponsor.new-projects') ? 'active' : '' }}"><i class="fa-solid fa-bolt"></i> New Projects</a>
+            <a href="{{ route('sponsor.project-review') }}" class="nav-item {{ request()->routeIs('sponsor.project-review') ? 'active' : '' }}"><i class="fa-solid fa-clock-rotate-left"></i> Project Review</a>
+            <a href="{{ route('sponsor.profile') }}" class="nav-item {{ request()->routeIs('sponsor.profile') ? 'active' : '' }}"><i class="fa-regular fa-circle-user"></i> Profile</a>
         </nav>
         <div class="sidebar-footer">
             <a href="{{ route('logout') }}" class="nav-item" id="logout-btn"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>

@@ -15,7 +15,7 @@
 <body>
 
     <div class="dashboard-container">
-        <!-- Sidebar -->
+                <!-- Sidebar -->
         <aside class="sidebar">
             <div class="sidebar-header">
                 <img class="pf-dedup-fffde0" src="{{ asset('assets/images/project logo.jpeg') }}" alt="P-FUNDS Logo">
@@ -27,9 +27,9 @@
             </div>
 
             <nav class="sidebar-nav">
-                <a href="{{ route('admin.dashboard') }}" class="nav-item"><i class="fa-solid fa-border-all"></i> Dashboard</a>
+                <a href="{{ route('admin.dashboard') }}" class="nav-item {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}"><i class="fa-solid fa-border-all"></i> Dashboard</a>
                 
-                <div class="nav-group">
+                <div class="nav-group {{ request()->routeIs('admin.account-create') || request()->routeIs('admin.account-review') || request()->routeIs('admin.role-assignment') || request()->routeIs('admin.activity-logs') ? 'expanded' : '' }}">
                     <div class="nav-group-header" onclick="this.parentElement.classList.toggle('expanded')">
                         <div class="pf-dedup-e2f701">
                             <i class="fa-solid fa-users icon"></i> Account Management
@@ -37,14 +37,14 @@
                         <i class="fa-solid fa-chevron-right chevron"></i>
                     </div>
                     <div class="sub-nav">
-                        <a href="{{ route('admin.account-create') }}" class="sub-nav-item">Create Account</a>
-                        <a href="{{ route('admin.account-review') }}" class="sub-nav-item">View Accounts</a>
-                        <a href="{{ route('admin.role-assignment') }}" class="sub-nav-item">Role Assignments</a>
-                        <a href="{{ route('admin.activity-logs') }}" class="sub-nav-item">Activity Logs</a>
+                        <a href="{{ route('admin.account-create') }}" class="sub-nav-item {{ request()->routeIs('admin.account-create') ? 'active' : '' }}">Create Account</a>
+                        <a href="{{ route('admin.account-review') }}" class="sub-nav-item {{ request()->routeIs('admin.account-review') ? 'active' : '' }}">View Accounts</a>
+                        <a href="{{ route('admin.role-assignment') }}" class="sub-nav-item {{ request()->routeIs('admin.role-assignment') ? 'active' : '' }}">Role Assignments</a>
+                        <a href="{{ route('admin.activity-logs') }}" class="sub-nav-item {{ request()->routeIs('admin.activity-logs') ? 'active' : '' }}">Activity Logs</a>
                     </div>
                 </div>
 
-                <div class="nav-group">
+                <div class="nav-group {{ request()->routeIs('admin.project-review') || request()->routeIs('admin.rejected-projects') || request()->routeIs('admin.project-tracking') || request()->routeIs('admin.milestones') ? 'expanded' : '' }}">
                     <div class="nav-group-header" onclick="this.parentElement.classList.toggle('expanded')">
                         <div class="pf-dedup-e2f701">
                             <i class="fa-solid fa-folder-tree icon"></i> Project Management
@@ -52,15 +52,15 @@
                         <i class="fa-solid fa-chevron-right chevron"></i>
                     </div>
                     <div class="sub-nav">
-                        <a href="{{ route('admin.project-review') }}" class="sub-nav-item">Pending Approval</a>
-                        <a href="{{ route('admin.rejected-projects') }}" class="sub-nav-item">Rejected Projects</a>
-                        <a href="{{ route('admin.project-tracking') }}" class="sub-nav-item">Project Tracking</a>
-                        <a href="{{ route('admin.milestones') }}" class="sub-nav-item">Milestone Updates</a>
+                        <a href="{{ route('admin.project-review') }}" class="sub-nav-item {{ request()->routeIs('admin.project-review') ? 'active' : '' }}">Pending Approval</a>
+                        <a href="{{ route('admin.rejected-projects') }}" class="sub-nav-item {{ request()->routeIs('admin.rejected-projects') ? 'active' : '' }}">Rejected Projects</a>
+                        <a href="{{ route('admin.project-tracking') }}" class="sub-nav-item {{ request()->routeIs('admin.project-tracking') ? 'active' : '' }}">Project Tracking</a>
+                        <a href="{{ route('admin.milestones') }}" class="sub-nav-item {{ request()->routeIs('admin.milestones') ? 'active' : '' }}">Milestone Updates</a>
                     </div>
                 </div>
 
-                <a href="{{ route('admin.activity-logs') }}" class="nav-item"><i class="fa-regular fa-eye"></i> System Oversight</a>
-                <a href="{{ route('admin.profile') }}" class="nav-item active"><i class="fa-regular fa-circle-user"></i> Profile</a>
+                <a href="{{ route('admin.activity-logs') }}" class="nav-item {{ request()->routeIs('admin.activity-logs') ? 'active' : '' }}"><i class="fa-regular fa-eye"></i> System Oversight</a>
+                <a href="{{ route('admin.profile') }}" class="nav-item {{ request()->routeIs('admin.profile') ? 'active' : '' }}"><i class="fa-regular fa-circle-user"></i> Profile</a>
             </nav>
 
             <div class="sidebar-footer pf-dedup-56115e">

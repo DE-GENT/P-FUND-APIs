@@ -8,7 +8,7 @@
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="{{ asset('dist/styles/index.css') }}">
+  <link rel="stylesheet" href="{{ asset('dist/styles/home.css') }}">
 </head>
 <body>
 

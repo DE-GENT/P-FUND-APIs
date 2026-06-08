@@ -23,27 +23,30 @@
             </div>
             
             <nav class="sidebar-nav">
-                <a href="{{ route('user.dashboard') }}" class="nav-item">
+                <a href="{{ route('user.dashboard') }}" class="nav-item {{ request()->routeIs('user.dashboard') ? 'active' : '' }}">
                     <i class="fa-solid fa-border-all"></i>
                     Dashboard
                 </a>
-                <a href="{{ route('user.project-submit-1') }}" class="nav-item">
+                <a href="{{ route('user.project-submit-1') }}" class="nav-item {{ request()->routeIs('user.project-submit-*') || request()->routeIs('user.project-confirm') ? 'active' : '' }}">
                     <i class="fa-regular fa-square-plus"></i>
                     Submit Project
                 </a>
-                <a href="{{ route('user.project-review') }}" class="nav-item">
+                <a href="{{ route('user.project-review') }}" class="nav-item {{ request()->routeIs('user.project-review') ? 'active' : '' }}">
                     <i class="fa-solid fa-list-check"></i>
                     Project Reviews
                 </a>
-                <a href="{{ route('user.project-update') }}" class="nav-item active">
+                <a href="{{ route('user.project-update') }}" class="nav-item {{ request()->routeIs('user.project-update') || request()->routeIs('user.edit-update') ? 'active' : '' }}">
                     <i class="fa-solid fa-rotate-right"></i>
                     Project Update
                 </a>
-                <a href="{{ route('user.profile') }}" class="nav-item">
+                <a href="{{ route('user.profile') }}" class="nav-item {{ request()->routeIs('user.profile') ? 'active' : '' }}">
                     <i class="fa-regular fa-user"></i>
                     Profile
                 </a>
             </nav>
+            <div class="sidebar-footer">
+                <a href="{{ route('logout') }}" class="nav-item" id="logout-btn"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+            </div>
             
         </aside>
 

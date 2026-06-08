@@ -292,6 +292,7 @@
     margin-bottom: 30px;
 }
 
+
 /* ========================================= */
 /* From ad_activity_logs.html (Block 2) */
 /* ========================================= */
@@ -309,49 +310,8 @@
     right: 30px;
     width: 350px;
     background: white;
-
-    /*top header*/
-    .top-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 35px;
-    }
-
-    .page-title {
-        font-size: 18px;
-        font-weight: 600;
-        color: #334155;
-    }
-
-    .user-profile {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
-
-    .user-profile img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid #e2e8f0;
-    }
-
-    .user-info p:first-child {
-        font-size: 14px;
-        font-weight: 500;
-        color: #1e293b;
-    }
-
-    .user-info p:last-child {
-        font-size: 12px;
-        color: #64748b;
-    }
-
     border-radius: 12px;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
-    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: none;
     flex-direction: column;
@@ -788,17 +748,16 @@
 
 /* Profile specific styles */
 .content-area {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px 40px 40px 40px;
-    max-width: 1000px;
+    padding: 0 40px 40px 40px;
+    max-width: 800px;
+    width: 100%;
 }
 
 .profile-card {
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    /* overflow: hidden; */
+    overflow: hidden;
     border: 1px solid #e2e8f0;
 }
 
@@ -1575,7 +1534,7 @@
 }
 
 .pf-dedup-20f3dc {
-    /* display: grid; */
+    display: grid;
     gap: 24px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -1595,7 +1554,7 @@
     outline: none;
     padding: 14px;
     transition: all 0.2s;
-    width: 90%;
+    width: 100%;
 }
 
 .pf-dedup-59aa04 {
@@ -2263,7 +2222,7 @@
 }
 
 .pf-dedup-10efee {
-    max-width: 900px;
+    max-width: 400px;
 }
 
 .pf-dedup-cb0b02 {
@@ -2404,22 +2363,8 @@ body.sidebar-open {
 
     .main-content {
         margin-left: 0 !important;
-        margin-right: 0 !important;
         padding: 0 20px 100px 20px !important;
         overflow-x: hidden !important;
-    }
-
-    .profile-card {
-        max-width: none !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-
-    .content-area {
-        padding: 10px 10px 10px 10px !important;
-        max-width: none;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .dashboard-topbar {
@@ -2451,7 +2396,6 @@ body.sidebar-open {
     }
 
     .user-profile {
-
         padding-left: 15px;
     }
 

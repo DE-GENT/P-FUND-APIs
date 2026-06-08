@@ -23,10 +23,10 @@
             <div class="role-subtitle pf-dedup-0c6e55">REVIEW AUTHORITY</div>
         </div>
         <nav class="sidebar-nav">
-            <a href="{{ route('vetter.dashboard') }}" class="nav-item"><i class="fa-solid fa-border-all"></i> Dashboard</a>
-            <a href="{{ route('vetter.queue') }}" class="nav-item"><i class="fa-solid fa-layer-group"></i> Vetting Queue</a>
-            <a href="{{ route('vetter.deliverables') }}" class="nav-item active"><i class="fa-solid fa-file-circle-check"></i> Deliverables</a>
-            <a href="{{ route('vetter.profile') }}" class="nav-item"><i class="fa-regular fa-circle-user"></i> Profile</a>
+            <a href="{{ route('vetter.dashboard') }}" class="nav-item {{ request()->routeIs('vetter.dashboard') ? 'active' : '' }}"><i class="fa-solid fa-border-all"></i> Dashboard</a>
+            <a href="{{ route('vetter.queue') }}" class="nav-item {{ request()->routeIs('vetter.queue') ? 'active' : '' }}"><i class="fa-solid fa-layer-group"></i> Vetting Queue</a>
+            <a href="{{ route('vetter.deliverables') }}" class="nav-item {{ request()->routeIs('vetter.deliverables') ? 'active' : '' }}"><i class="fa-solid fa-file-circle-check"></i> Deliverables</a>
+            <a href="{{ route('vetter.profile') }}" class="nav-item {{ request()->routeIs('vetter.profile') ? 'active' : '' }}"><i class="fa-regular fa-circle-user"></i> Profile</a>
         </nav>
         <div class="sidebar-footer pf-dedup-56115e">
             <nav class="sidebar-nav pf-dedup-53896a">
